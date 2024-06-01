@@ -1,0 +1,266 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+:root {
+
+    --dk-violet: hsl(268, 75%, 9%);
+    --lt-violet: hsl(268, 47%, 21%);
+    --lt-violet2: hsl(281, 89%, 26%);
+    --vb-violet: hsl(285, 91%, 52%);
+    --vb-violet2: hsl(290, 70%, 36%);
+  
+    --vb-yellow: hsl(52, 100%, 62%);
+  
+  
+    --pl-white: hsl(0, 0%, 100%);
+  
+    --vb-cyan: hsl(176, 100%, 44%);
+    --vb-cyan2: hsl(177, 92%, 70%);
+    --dk-text: hsl(198, 20%, 13%);
+}
+
+#bgBack{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(45deg, hsl(281, 89%, 26%),hsl(268, 47%, 21%), hsl(268, 75%, 9%));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+.color1{
+    color: white;
+    font-size: 2em;
+    
+    font-weight: bold;
+    letter-spacing: 2px;
+    opacity: 0.75;
+    text-align: center;
+    line-height: 70px;
+}
+.box1{
+   
+   border-radius: 1rem;
+   background-color: var(--dk-violet);
+   border-bottom: 5px solid hsl(281, 89%, 26%);
+   margin-bottom: 20px;
+   
+ 
+}
+
+.box{
+    max-width: 450px;
+    width: 90%;
+   
+    
+   
+}
+.inputbox{
+    
+   position: relative;
+
+    
+}
+.inputclass{
+    width: 100%;
+    background-color: transparent;
+    padding: 1.25rem 1rem;
+    color: var(--vb-yellow);
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding-right: 3.25rem;
+    border:none;
+    
+}
+.imgbox{
+    position: absolute;
+    top: 30%;
+    right: 1rem;
+    
+    background-color: transparent;
+    border: none;
+    
+}
+.inputbox>input{
+    appearance: none;
+    background-color: transparent;
+    font-size: 1.5rem;
+    color:  hsl(52, 100%, 62%);
+    border: none;
+    font-weight: bold;
+
+
+}
+.passwordbox{
+    border-radius: 1rem;
+    background-color: var(--dk-violet);
+    border-bottom: 5px solid hsl(281, 89%, 26%);
+
+}
+.passwordlength{
+    color: white;
+    font-size: 1.25rem;
+    
+    letter-spacing: 0.75;
+    
+
+    
+    
+}
+.passwordlengt{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.5rem;
+    
+}
+.colornum{
+    color:  hsl(52, 100%, 62%);
+    font-size: 1.4rem;
+}
+.mainpwdbox{
+  padding: 32px;
+  
+   
+}
+.check{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem 0rem;
+    align-items: center;
+    gap: 0px 1rem;
+    
+    
+}
+.lengthbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+}
+#strength{
+    color: var(--pl-white);
+    font-size: 1.5rem;
+   
+}
+#generatebutton{
+    appearance: none;
+    border: none;
+    background-color: var(--vb-violet);
+    
+    
+   padding: 1rem 0rem;
+   width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: var(--vb-yellow);
+    border-bottom: 5px solid var(--vb-yellow);
+    border-radius: 0.7rem;
+}
+.indicatorbox{
+    width:1.5rem;
+    height:1.5rem;
+    border-radius:50%;
+}
+.strengthbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1.75rem 0rem 2rem 0rem;
+
+}
+#slidervalue{
+    margin: 2rem 0rem 1.5rem 0rem;
+}
+.check>input{
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--vb-cyan);
+    border-radius:0.35rem;
+    position: relative;
+ 
+
+}
+.check>input:checked{
+    background-color: var(--vb-cyan);
+}
+.check>input:checked::before{
+    content: "✔";
+    font-size: 1.05rem;
+    font-weight: 600;
+    position: absolute;
+    left: 2px;
+    bottom: 0.5px;
+}
+#slidervalue{
+    width: 100%;
+    appearance: none;
+    height: 0.75rem;
+    border-radius: 1rem;
+    background-color: var(--lt-violet);
+    background-image: linear-gradient(var(--vb-violet), var(--vb-violet));
+    background-repeat: no-repeat;
+    
+    
+}
+#slidervalue::-webkit-slider-thumb{
+    
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--vb-yellow);
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px 0px var(--vb-yellow);
+    position: relative;
+    
+}
+.inputclass{
+    position: relative;
+    padding: 1.3rem;
+}
+.inputclass::placeholder{
+    color: var(--vb-yellow);
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.7;
+    left: 1.5rem;
+
+
+}
+.messbtn{
+    color: var(--vb-yellow);
+    position: absolute;
+    top: -15px;
+    right: 7px;
+    font-size: 1.25rem;
+    padding: 5.5px;
+    border-radius: 50px;
+   transform: scale(0);
+    background-color: var(--vb-violet2);
+    transition: all 250ms ease-in-out;
+    
+    
+    
+
+}
+#slidervalue:focus{
+    outline: 0.23rem solid var(--vb-yellow);
+}
+#slidervalue::-webkit-slider-thumb:hover{
+    background-color:var(--dk-violet);
+    outline: 2px solid var(--vb-yellow);
+    
+}
+
+
